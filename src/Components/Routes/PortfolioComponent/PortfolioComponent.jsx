@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+// import Tailwind styles
+// import PrabanjanProfile from '../Components/img/PrabanjanProfile.jpg';
 
-export default function PortfolioComponent() {
+function App() {
   return (
-    <div>PortfolioComponent</div>
-  )
+    <div>Portfolio</div>
+  );
 }
+
+export default App;
