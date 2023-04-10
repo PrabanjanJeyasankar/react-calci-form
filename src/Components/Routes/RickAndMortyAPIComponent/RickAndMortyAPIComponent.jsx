@@ -48,7 +48,7 @@ export class RickAndMortyAPIComponent extends Component {
                                     </li>
                                     <li>
                                         <span className='text-gray-300 text-[15px] font-semibold mb-4'>First Seen in :</span><br />
-                                        <span>{post.location.name}</span>
+                                        <span className='text-xl m-0'>{post.location.name}</span>
                                     </li>
                                     <br/>
                                     </ul>

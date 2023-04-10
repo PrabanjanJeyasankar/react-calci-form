@@ -1,13 +1,13 @@
 import React from 'react';
 // import Tailwind styles
-// import PrabanjanProfile from '../Components/img/PrabanjanProfile.jpg';
+import ProfilePicture from '../../img/PrabanjanProfile.jpg'
 
 function App() {
   return (
     <div className="flex">
-      <div className="bg-gray-300 rounded-r-[20px] w-1/3 min-h-screen py-12 px-8">
+      <div className="bg-gray-300  w-1/3 min-h-screen py-12 px-8">
         <div className="flex justify-center">
-          {/* <img src={PrabanjanProfile} alt="Profile" className="w-2/3 rounded-full" /> */}
+          <img src={ProfilePicture} alt="Profile" className="w-2/3 rounded-full" />
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mt-4">Prabanjan Jeyasankar</h1>
         <h2 className="text-lg font-medium text-gray-600 mt-2">Software Engineer</h2>
