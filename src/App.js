@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router,Routes,Route, Link} from "react-router-dom"
 import './App.css';
+import PortfolioComponent from './Components/Routes/PortfolioComponent/PortfolioComponent';
+import RickAndMortyAPIComponent from './Components/Routes/RickAndMortyAPIComponent/RickAndMortyAPIComponent';
+import CalculatorComponent from './Components/Routes/CalculatorComponent/CalculatorComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to='/PortfolioComponent' ><h3>Portfolio</h3></Link>
+          </li>
+          <li>
+            <Link to='/RickAndMortyAPIComponent' ><h3>Rick & Morty</h3></Link>
+          </li>
+          <li>
+            <Link to='/CalculatorComponent' ><h3>Calculator</h3></Link>
+          </li>
+        </ul>
+        <Routes>
+          <Route exact path='/PortfolioComponent' element ={<PortfolioComponent/>}></Route>
+          <Route exact path='/RickAndMortyAPIComponent' element ={<RickAndMortyAPIComponent/>} ></Route>
+          <Route exact path='/CalculatorComponent' element={<CalculatorComponent/>}></Route>
+        </Routes>
+        </div>
+      
+    </Router>
   );
 }
 
