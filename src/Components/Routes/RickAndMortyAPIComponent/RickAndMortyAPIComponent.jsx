@@ -6,7 +6,7 @@ export class RickAndMortyAPIComponent extends Component {
         super(props)
         this.state = {
             posts:[],
-            errorMessage : ''
+            errorMessage : '',
         }
     }
     componentDidMount(){
@@ -23,35 +23,45 @@ export class RickAndMortyAPIComponent extends Component {
     }
   render() {
     const { posts, errorMessage } = this.state
-    // const { characters, error } = this.state;
+    const { query,setQuery}=this.state
     return (
       <React.Fragment>
         <div className='flex justify-center bg-gray-200  '>
             <div className='grid grid-cols-2 gap-3 text-xl m-10 text-white'>
-                   
+                   {/* <div className='Search'>
+                    <input type="text"
+                           placeholder={"Search Character"}
+                           className={"input"}
+                           onChange={event => setQuery(event.target.value)}
+                           value={query}
+                    />
+                   </div> */}
                             {posts.length
                                 ?posts.map
                                 (post=>
-                                    <div  className='bg-gray-500 text-3xl rounded-[7px] pt-4 pl-4 pr-4 '
-                                     key={post.id}
-                                     >
-                                    <ul>
-                                    <li className='leading-lo'> 
-                                       <span className='text-[30px] font-bold'> {post.name}</span>
-                                    </li>
-                                    <li className='text-[18px] font-medium'>
-                                        <span>{post.status} - {post.species}</span>
-                                    </li>
-                                    <li>
-                                        <span className='text-gray-300 text-[15px] font-semibold mb-4'>Last Known Location : <br/></span> 
-                                        <span className='text-xl m-0'> {post.origin.name}</span>
-                                    </li>
-                                    <li>
-                                        <span className='text-gray-300 text-[15px] font-semibold mb-4'>First Seen in :</span><br />
-                                        <span className='text-xl m-0'>{post.location.name}</span>
-                                    </li>
-                                    <br/>
-                                    </ul>
+                                    <div  className='bg-gray-500 flex  text-3xl rounded-[7px] pb-4 pt-4 pl-4 pr-4 'key={post.id}>
+                                        <div className=' object-cover object-center'>
+                                            <img src={post.image} className='rounded-xl   ' alt="img" />
+                                        </div>
+                                        <div className=' pl-6'>
+                                            {/* <ul> */}
+                                                <div className='leading-lo'> 
+                                                    <span className='text-[30px] font-bold'> {post.name}</span>
+                                                </div>
+                                                <div className='text-[18px] font-medium'>
+                                                    <span>{post.status} - {post.species}</span>
+                                                </div>
+                                                <div>
+                                                    <span className='text-gray-300 text-[15px] font-semibold mb-4'>Last Known Location : <br/></span> 
+                                                    <span className='text-xl m-0'> {post.origin.name}</span>
+                                                </div>
+                                                <div>
+                                                    <span className='text-gray-300 text-[15px] font-semibold mb-4'>First Seen in :</span><br />
+                                                    <span className='text-xl m-0'>{post.location.name}</span>
+                                                </div>
+                                                <br/>
+                                            {/* </ul> */}
+                                        </div>
                                     </div>
                                 )
                                 

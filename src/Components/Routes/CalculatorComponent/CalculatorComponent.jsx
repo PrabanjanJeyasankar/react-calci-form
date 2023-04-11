@@ -23,7 +23,7 @@ function CalculatorComponent() {
     <div className="calculator flex flex-col justify-center items-center h-screen">
 
       <div className="buttons grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 gap-2 p-4">
-      <div className="display bg-gray-900 text-white text-right p-4 text-4xl font-bold col-span-4">{input || '0'}</div>
+      <div className="display bg-gray-900 rounded-lg text-white text-right p-4 text-4xl font-bold col-span-4">{input || '0'}</div>
         <button value="/" className="bg-orange-400 text-white font-bold text-2xl p-2 rounded-full" onClick={handleButtonClick}>÷</button>
         <button value="7" className="bg-gray-300 text-black font-bold text-2xl p-2 rounded-lg" onClick={handleButtonClick}>7</button>
         <button value="8" className="bg-gray-300 text-black font-bold text-2xl p-2 rounded-lg" onClick={handleButtonClick}>8</button>
@@ -39,8 +39,8 @@ function CalculatorComponent() {
         <button value="+" className="bg-orange-400 text-white font-bold text-2xl p-2 rounded-full" onClick={handleButtonClick}>+</button>
         <button value="0" className="bg-gray-300 text-black font-bold text-2xl p-2 rounded-lg col-span-2" onClick={handleButtonClick}>0</button>
         <button value="." className="bg-gray-300 text-black font-bold text-2xl p-2 rounded-lg" onClick={handleButtonClick}>.</button><br />
-        <button value="C" className="bg-gray-600 text-white font-bold text-2xl p-2 rounded-full col-span-2" onClick={handleClearButtonClick}>C</button>
-        <button value="=" className="bg-gray-300 text-black font-bold text-2xl p-2 rounded-lg" onClick={handleCalculateButtonClick}>=</button>
+        <button value="=" className="bg-orange-400 text-white font-bold text-2xl pl-4 pt-1 pr-4 pb-1 rounded-lg" onClick={handleCalculateButtonClick}>=</button>
+        <button value="C" className="bg-gray-600 text-white font-bold text-2xl p-2 rounded-lg col-span-2" onClick={handleClearButtonClick}>C</button>
 
 </div>
 

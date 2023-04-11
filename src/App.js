@@ -10,7 +10,7 @@ function App() {
   <div >
         <ul className='bg-gray-400 flex justify-center text-2xl font-semibold '>
           <li className="p-8  pl-5 pr-5 pt-2 pb-2  m-2 mt-6 mb-6 hover:bg-white hover:rounded-full ">
-            <Link to='/PortfolioComponent' ><h3>Portfolio</h3></Link>
+            <Link to='/' ><h3>Portfolio</h3></Link>
           </li>
           <li className="p-8 pl-5 pr-5 pt-2 pb-2  m-2 mt-6 mb-6 hover:bg-white hover:text-gray-800 hover:rounded-full">
             <Link to='/RickAndMortyAPIComponent' ><h3>Rick & Morty</h3></Link>
@@ -20,10 +20,11 @@ function App() {
           </li>
         </ul>
         <Routes>
-          <Route exact path='/PortfolioComponent' element ={<PortfolioComponent/>}></Route>
+          <Route exact path='/' element ={<PortfolioComponent/>}></Route>
           <Route exact path='/RickAndMortyAPIComponent' element ={<RickAndMortyAPIComponent/>} ></Route>
           <Route exact path='/CalculatorComponent' element={<CalculatorComponent/>}></Route>
         </Routes>
+
         </div>
       
     </Router>
