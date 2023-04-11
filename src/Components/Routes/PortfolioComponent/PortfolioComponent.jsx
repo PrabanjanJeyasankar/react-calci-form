@@ -20,10 +20,11 @@ function App() {
       <div className="bg-white w-2/3 min-h-screen py-12 px-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-8">Skills</h1>
         <div className="flex flex-wrap">
-          <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">React</div>
-          <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">Node.js</div>
-          <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">JavaScript</div>
+          <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">HTML</div>
           <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">CSS</div>
+          <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">JavaScript</div>
+          <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">React Js</div>
+          <div className="bg-gray-300 pl-6 pr-6 pt-3 pb-3 rounded-full m-1">Node Js</div>
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mt-8 mb-8">Experience</h1>
         <div className="mb-8">

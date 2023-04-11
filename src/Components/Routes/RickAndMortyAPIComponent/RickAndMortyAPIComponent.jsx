@@ -23,19 +23,11 @@ export class RickAndMortyAPIComponent extends Component {
     }
   render() {
     const { posts, errorMessage } = this.state
-    const { query,setQuery}=this.state
     return (
       <React.Fragment>
         <div className='flex justify-center bg-gray-200  '>
             <div className='grid grid-cols-2 gap-3 text-xl m-10 text-white'>
-                   {/* <div className='Search'>
-                    <input type="text"
-                           placeholder={"Search Character"}
-                           className={"input"}
-                           onChange={event => setQuery(event.target.value)}
-                           value={query}
-                    />
-                   </div> */}
+                
                             {posts.length
                                 ?posts.map
                                 (post=>
@@ -44,7 +36,6 @@ export class RickAndMortyAPIComponent extends Component {
                                             <img src={post.image} className='rounded-xl   ' alt="img" />
                                         </div>
                                         <div className=' pl-6'>
-                                            {/* <ul> */}
                                                 <div className='leading-lo'> 
                                                     <span className='text-[30px] font-bold'> {post.name}</span>
                                                 </div>
@@ -60,7 +51,6 @@ export class RickAndMortyAPIComponent extends Component {
                                                     <span className='text-xl m-0'>{post.location.name}</span>
                                                 </div>
                                                 <br/>
-                                            {/* </ul> */}
                                         </div>
                                     </div>
                                 )
