@@ -15,7 +15,7 @@ class ContactUsComponent extends Component {
   
       componentDidMount(){
           axios
-          .get(`http://localhost:3000/ContactUsComponent`)
+          .get(`http://localhost:3500/ContactUs`)
           .then(response=>{
               console.log(response.data)
               this.setState({

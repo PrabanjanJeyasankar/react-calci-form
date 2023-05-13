@@ -15,7 +15,7 @@ class HomeComponent extends Component {
 
     componentDidMount(){
         axios
-        .get(`http://localhost:3000/HomeComponent`)
+        .get(`http://localhost:3500/homePage`)
         .then(response=>{
             console.log(response.data)
             this.setState({
@@ -28,7 +28,6 @@ class HomeComponent extends Component {
                 errorMessage : "Error Retrieving data"
             })
         })
-
     }
   render() {
     return (

@@ -15,7 +15,7 @@ class AboutUsComponent extends Component {
   
       componentDidMount(props){
           axios
-          .get(`http://localhost:3000/AboutUsComponent`)
+          .get(`http://localhost:3500/aboutUs`)
           .then(response=>{
               console.log(response.data)
               this.setState({
